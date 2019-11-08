@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <!-- <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Bulma Version 0.8.x-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="../css/hero.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+  <link rel='stylesheet' href='./assets/CSS/bulma.css'>
+  <title>ReciPal</title>
+
+<body>
+  <!--header code-->
+  <section class="hero is-warning is-small">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <img src="assets/logo.png" width="300" height="300">
+        <p class="subtitle">
+          Now We're Cooking!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--sub header code-->
+  <div class="box cta">
+    <p class="has-text-centered">
+
+
+      <!--Buttons for me to pick another dish type-->
+      <button id="breakfastBox" class="button is-warning">Breakfast</button>
+      <button id="lunchBox" class="button is-warning">Lunch</button>
+      <button id="dinnerBox" class="button is-warning">Dinner</button>
+      or
+      <input id="advanced" type=button onClick="location.href='search.html'" value='Advanced Search' class="button is-danger">
+
+  </div>
+
+  <!--recommended recipes card container-->
+  <div class="container">
+    <div class="notification">
+      <h1 class="title">Let's Get Cookin'</h1>
+      <div class="columns is-multiline is-vcentered">
+          <img class="recipeImg">
+          <h2 class="recipeLabel"></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <a id="seeMore" class="button is-danger is-inverted buttons has-addons is-centered"> See More </a>
+  <a id="seeLess" class="is-hidden button is-danger is-inverted buttons has-addons is-centered"> See Less </a>
+
+  <footer class="footer">
+  </footer>
+
+  <!--- future add ons - favorite recipes which will add a recipe card to local storage displayed on a new page 
+ future add ons - share options to share recipe with friends -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
